@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>FeedBack form</title>
+        <link rel="stylesheet" href="feedback.css">
+
+    </head>
+    <body>
+    <video class="video-bg" src="assest/fish.mp4" autoplay loop muted playsinline></video>
+
+        <h2>FeedBack Form</h2>
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="d84ec98c-1a01-4aa1-8451-bf957ac8f908">
+            <label for="name">Name</label>
+            <input name="name" type="text" id="name" required>
+
+            <label for="email">Email</label>
+            <input  name="email" type="email" id="email" placeholder="example2gmail.com" required>
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="">Select Rating</option>
+                <option value="5">excellent</option>
+                <option value="4">Very Good</option>
+                <option value="3">Good</option>
+                <option value="2">fair</option>
+                <option value="1">Poor</option>
+            </select>
+
+            <label for="comment">Your feedBack</label>
+            <textarea id="comment" name="comment" placeholder="write your feedback" rows="5" required></textarea>
+            
+            <button type="submit"> FeedBack Submit</button>
+        </form>
+        
+
+    </body>
+</html>

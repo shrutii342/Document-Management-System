@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>SignUp-DMS</title>
+    <link rel="stylesheet" href="signup.css">
+
+</head>    
+<body>
+    <div class="container">
+        <h2>Create An Account</h2>
+        <form id="signupForm">
+            <label for="firstname">Username</label>
+            <input type="text" id="firstname" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="example@gmail.com" required>
+
+            <label for="password">Password</label>
+            <input for="password" id="password" required>
+
+            <label for="confirm password">Confirm Password</label>
+            <input type="password" id="confirm password" required>
+
+            <button type="submit">Sign Up</button>
+        </form>
+        <div class="option" style="text-align:center; margin-top:16px;">
+            Already have an account? <a href="LogIn.html" id="signin-link">Sign In</a>
+        </div>
+    </div>
+<script src="JS/signup.js"></script>
+</body>
+</html>

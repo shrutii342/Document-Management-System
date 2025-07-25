@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Contact Us - DMS</title>
+    <link rel="stylesheet" href="CSS/contactus.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <video class="video-bg" src="assest/3115209-uhd_3840_2160_25fps.mp4" autoplay loop muted playsinline></video>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="d84ec98c-1a01-4aa1-8451-bf957ac8f908">
+            <label for="name">Your Name</label>
+            <input name="name" type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email">Email</label>
+            <input name="email" type="email" id="email" placeholder="example@gmail.com" required>
+
+            <label for="subject">Subject</label>
+            <input name="subject" type="text" id="subject" placeholder="Enter subject" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write your message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>

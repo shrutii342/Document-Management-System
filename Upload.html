@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Upload Document - DMS</title>
+    <link rel="stylesheet" href="upload.css">
+</head>
+<body>
+<video class="video-bg" src="assest/document.mp4" autoplay loop muted playsinline></video>
+    
+    <div class="container">
+        <h2>Upload Document</h2>
+        <form>
+            <label for="docName">Document Name</label>
+            <input type="text" id="docName" placeholder="Enter document name" required>
+
+            <label for="docCategory">Category</label>
+            <select id="docCategory" required>
+                <option value="">Select Category</option>
+                <option value="report">Report</option>
+                <option value="invoice">Invoice</option>
+                <option value="presentation">Presentation</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="docFile">Choose File</label>
+            <input type="file" id="docFile" required>
+
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+</body>
+</html>
